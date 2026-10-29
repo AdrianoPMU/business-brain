@@ -7,6 +7,7 @@ Goal: when a Spanish-speaking PMU artist in the US searches Google, asks ChatGPT
 Health score **55/100**. Full report: `audits/2026-10-28/` (start with `FULL-AUDIT-REPORT.md`, plan in `ACTION-PLAN.md`, PDF for humans).
 
 - The main site (Lovable) builds its text with JavaScript, so bots that don't run JS see 30–64 words per page.
+- **Re-checked 2026-10-29 (measured, not assumed):** the homepage serves 68 words to a normal browser *and* to Googlebot, bingbot, GPTBot, OAI-SearchBot and PerplexityBot user agents. Raw HTML is 5.7 KB, one JSON-LD block, `?lang=en` returns the Spanish page with its own hreflang, and `sitemap.xml` lists only `/`, `/resultados`, `/privacidad`, `/terminos` (no `/book`). Lovable's docs say published apps pre-render for *verified* crawlers, and verification is almost certainly by IP, so a spoofed user agent cannot prove or disprove it. Check Search Console's crawled HTML or Lovable's SEO scan before spending money on pre-rendering.
 - Only 4 indexable pages, all sales or legal. Nothing ranks except the brand name.
 - "PMU Academia" searches return a Saudi university and a UK academy, not us.
 - No off-site mentions yet; schema `sameAs` lists only Instagram.
@@ -18,6 +19,8 @@ Health score **55/100**. Full report: `audits/2026-10-28/` (start with `FULL-AUD
 2. **Weeks 2–3:** one name everywhere ("PMU Academia USA" + "Sistema Agenda Llena"), `/nosotros`, data-style `/resultados`, Facebook/YouTube/LinkedIn profiles, footer credit on every client site.
 3. **Month 2+:** `/guias/` hub, 2 Spanish articles a week from the content map in `ACTION-PLAN.md`, each turned into a YouTube video and Shorts.
 4. **Ongoing:** monthly audit, drift checks after deploys, monthly AI spot check.
+
+Article drafts live in `content/`, named by their order in the content map. Drafts are written before they are published, with the numbers behind them cited and a "NO PUBLICAR" block at the bottom holding what still needs checking.
 
 No Google Business Profile: PMU Academia only meets clients online, which Google doesn't allow a profile for.
 
