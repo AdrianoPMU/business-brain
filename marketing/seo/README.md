@@ -24,6 +24,26 @@ Article drafts live in `content/`, named by their order in the content map. Draf
 
 No Google Business Profile: PMU Academia only meets clients online, which Google doesn't allow a profile for.
 
+## Google Search Console (connected 2026-10-29)
+
+- Property: `sc-domain:pmuacademia.com` (domain property, covers every subdomain). Adriano's Google account is Owner.
+- Claude reaches it through **Composio** (toolkit `google_search_console`, account alias `pmu-academia`): list sites, search analytics, URL inspection, sitemaps. Use `site_url = "sc-domain:pmuacademia.com"` exactly.
+- claude-seo's own `/seo google` needs a Google Cloud service account, which is **not** set up. Pull GSC data through Composio instead.
+- `https://pmuacademia.com/sitemap.xml` submitted 2026-10-29.
+- DNS for pmuacademia.com is managed in **GoHighLevel** (nameservers braden/love.ns.cloudflare.com belong to GHL). The pmuacademia.com zone in our own Cloudflare account is pending and not live. DNS changes for this domain go in GHL.
+
+**Baseline (pulled 2026-10-29, last 90 days):**
+
+| Page | Google status |
+|---|---|
+| `https://pmuacademia.com/` | Submitted and indexed, last crawled 2026-10-27 |
+| `/resultados`, `/book` | URL is unknown to Google |
+| `kit.pmuacademia.com`, `agenda.pmuacademia.com` | URL is unknown to Google |
+
+Search: 5 impressions, 0 clicks, average position 15. The only visible query was "academia pmu" (1 impression, position 13); the rest are hidden by Google for privacy.
+
+**Open check:** in Search Console, URL Inspection → `https://pmuacademia.com/` → View crawled page → HTML. If Googlebot got the full page (FAQ, price, story), Lovable is pre-rendering for Google and the week 1 pre-render job only matters for AI bots. If it got ~68 words, pre-rendering is needed for Google too.
+
 ## The tool: claude-seo
 
 [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) (MIT, v2.5.0). 26 skills and 19 agents behind `/seo` commands.
@@ -42,7 +62,7 @@ No Google Business Profile: PMU Academia only meets clients online, which Google
 | Before publishing an article | `/seo page <url>` and `/seo geo <url>` |
 | Planning a topic cluster | `/seo cluster "<seed keyword>"` |
 | Schema changes | `/seo schema https://pmuacademia.com` |
-| Once Search Console is verified | `/seo google setup`, then `/seo google` for real clicks, queries and indexation |
+| Clicks, queries, indexation | Composio Search Console tools (see section above); `/seo google` only after a service account is set up |
 
 **Cloud-session quirk:** claude-seo's fetcher refuses the workspace's local proxy on purpose (it's an SSRF guard). Don't patch that. Instead fetch pages with `tools/fetch_site.py` (raw + rendered HTML, robots, sitemap) and `tools/perf_check.py` (mobile lab timings), then run the tool's parsers on the saved files, e.g. `"$HOME/.claude/skills/seo/scripts/claude-seo" run parse_html.py page.rendered.html --url <url> --json`. Run both scripts with the tool's own Python: `PLAYWRIGHT_BROWSERS_PATH=$HOME/.claude/skills/seo/ms-playwright $HOME/.claude/skills/seo/.venv/bin/python -I tools/fetch_site.py <out_dir> <url>...`
 
@@ -63,11 +83,11 @@ Ask each question in ChatGPT, Perplexity, Gemini and Google AI Mode. Log in the 
 
 ## KPIs
 
-| Metric | 2026-10-28 | 3 months | 6 months | 12 months |
+| Metric | Baseline (Oct 2026) | 3 months | 6 months | 12 months |
 |---|---|---|---|---|
 | Health score | 55 | 75 | 85 | 90 |
-| Indexed pages | ≤ 4 | 20 | 45 | 90 |
+| Indexed pages (GSC) | 1 | 20 | 45 | 90 |
 | Brand search shows pmuacademia.com first | No | Yes | Yes | Yes |
-| Organic clicks / month | unknown | 100 | 500 | 2,000 |
+| Organic clicks / month (GSC) | 0 (5 impressions in 90 days) | 100 | 500 | 2,000 |
 | Spot-check questions citing us (of 10) | 0 | 1 | 3 | 6 |
 | Booked calls from organic + AI / month | 0 | 2 | 6 | 15 |
