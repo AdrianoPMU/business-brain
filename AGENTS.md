@@ -1,6 +1,6 @@
 # PMU Academia: Business Brain
 
-Read this file first, every session. Then read the README in whatever folder you're working in, and the last 7 days of `work-logs/`.
+Read this file first, every session. Run `git pull` so you have the logs other sessions pushed, then read the README in whatever folder you're working in and the last 7 days of `work-logs/`.
 
 ## What this business does
 
@@ -25,25 +25,25 @@ We sell it as **Sistema Agenda Llena**: we run the artist's Meta ads, build her 
 | `work-logs/` | One dated log per work session. This is the memory. |
 
 Related code repos (all under github.com/AdrianoPMU):
-- `agenda-llena`: the Agenda Llena app (CRM, booking, texting, AI assistant)
+- `agenda-llena`: the Agenda Llena app (CRM, booking, texting, AI assistant). Its own `AGENTS.md` has the rules for working on the app.
 - `cocora-aesthetics`, `yoly-brow-studio`: client landing pages (Cloudflare Pages)
 - `pmu-garantia`
+
+Work done in any of those repos is logged here, in this repo's `work-logs/`.
 
 ## Tools agents can use here
 
 - **claude-seo** (`/seo` commands) for SEO and AI-search audits, content briefs and schema. On a computer it's enabled through `.claude/settings.json` once you trust this folder; in cloud sessions run `bash scripts/install-seo.sh` first. How we use it: `marketing/seo/README.md`.
 
-## How to log work
+## How to log work (required)
 
-At the end of every session, add a file to `work-logs/` named:
+Before your final reply on any task that changed something (code, a page, ads, a client's setup, a price, a decision), write a log. Don't wait for the end of the session; you usually can't tell when that is.
 
-```
-YYYY-MM-DD-short-topic.md
-```
+1. Add a file to `work-logs/` named `YYYY-MM-DD-short-topic.md`, using the template in `work-logs/README.md`. Keep it short: what got done, what got decided, what's still open. One file per task, so two AIs working at once never edit the same file.
+2. If something about the business changed (price, offer, a tool, a client's status), also update the README where that fact lives. The log says what happened; the READMEs say how things are now.
+3. Commit and push right away (`git pull --rebase` first). A log that isn't pushed doesn't exist for the next AI.
 
-Use the template in `work-logs/README.md`. Keep it short: what got done, what got decided, what's still open.
-
-If something about the business changed (price, offer, a tool, a client's status), also update the README where that fact lives. The log says what happened; the READMEs say how things are now.
+This applies to work done in other repos and in chats too: work on the app or a client site gets its log here. If you can't push to this repo, put the full log text at the end of your final reply so Adriano can add it.
 
 ## Rules for agents
 
