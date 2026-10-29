@@ -23,6 +23,10 @@ Other assets:
 - The original VSL page didn't convert well.
 - Meta audiences live in the older "Citas PMU" ad account (the pixel is linked there).
 
+## SEO and AI search
+
+Goal: be "omnipresent", found in Google and in AI answers, not just ads. First audit done 2026-10-28 (score 55/100). Plan, tool and KPIs: `seo/README.md`.
+
 ## Next up
 
-- SEO/AEO strategy so PMU Academia shows up everywhere, including Google ("omnipresent").
+- Week 1 SEO fixes on pmuacademia.com (pre-render pages, Search Console + Bing, schema, hreflang, subdomain cleanup). See `seo/audits/2026-10-28/ACTION-PLAN.md`.

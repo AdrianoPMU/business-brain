@@ -29,6 +29,10 @@ Related code repos (all under github.com/AdrianoPMU):
 - `cocora-aesthetics`, `yoly-brow-studio`: client landing pages (Cloudflare Pages)
 - `pmu-garantia`
 
+## Tools agents can use here
+
+- **claude-seo** (`/seo` commands) for SEO and AI-search audits, content briefs and schema. On a computer it's enabled through `.claude/settings.json` once you trust this folder; in cloud sessions run `bash scripts/install-seo.sh` first. How we use it: `marketing/seo/README.md`.
+
 ## How to log work
 
 At the end of every session, add a file to `work-logs/` named:
