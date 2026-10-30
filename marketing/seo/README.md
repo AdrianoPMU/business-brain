@@ -6,16 +6,27 @@ Goal: when a Spanish-speaking PMU artist in the US searches Google, asks ChatGPT
 
 Health score **55/100**. Full report: `audits/2026-10-28/` (start with `FULL-AUDIT-REPORT.md`, plan in `ACTION-PLAN.md`, PDF for humans).
 
-- The main site (Lovable) builds its text with JavaScript, so bots that don't run JS see 30–64 words per page.
+- ~~The main site (Lovable) builds its text with JavaScript, so bots that don't run JS see 30–64 words per page.~~ Fixed 2026-10-29: pages are pre-rendered (see below).
 - **Re-checked 2026-10-29 (measured, not assumed):** the homepage serves 68 words to a normal browser *and* to Googlebot, bingbot, GPTBot, OAI-SearchBot and PerplexityBot user agents. Raw HTML is 5.7 KB, one JSON-LD block, `?lang=en` returns the Spanish page with its own hreflang, and `sitemap.xml` lists only `/`, `/resultados`, `/privacidad`, `/terminos` (no `/book`). Lovable's docs say published apps pre-render for *verified* crawlers, and verification is almost certainly by IP, so a spoofed user agent cannot prove or disprove it. Check Search Console's crawled HTML or Lovable's SEO scan before spending money on pre-rendering.
 - Only 4 indexable pages, all sales or legal. Nothing ranks except the brand name.
 - "PMU Academia" searches return a Saudi university and a UK academy, not us.
 - No off-site mentions yet; schema `sameAs` lists only Instagram.
 - The Spanish niche (US-based PMU artists asking business questions) has no one answering it.
 
+## Week 1 technical fixes (published 2026-10-29)
+
+- **Pre-rendering is live.** The Lovable build (`vite.config.ts`, plugin `static-share-pages` → `prerenderPages`) renders `/`, `/book`, `/resultados`, `/privacidad`, `/terminos` and `/masterclass` with `src/entry-server.tsx` and writes the full markup into each page's static HTML. Bots that don't run JavaScript now read 635 words on the homepage (was 68), 647 on `/book` (was 32), 493 on `/resultados` (was 40). The browser hydrates that markup. New public pages must be added to `prerenderedRoutes` and to `public/sitemap.xml`; the Lovable project's `AGENTS.md` has the rules.
+- **Schema:** Organization (sameAs Instagram + Facebook Page 602734749594350), WebSite, Person (Adriano), Service "Sistema Agenda Llena" with a $297/month Offer, and FAQPage on the homepage generated from the `faqs` array in `FAQSection.tsx`.
+- **hreflang removed** (it pointed English at `?lang=en`, which served Spanish). Add it back only when English gets its own URL.
+- **Sitemap** now lists `/`, `/book`, `/resultados`, `/privacidad`, `/terminos`; resubmitted to Search Console.
+- **Bing Webmaster Tools:** Adriano imported the site from Search Console on 2026-10-29.
+- **IndexNow:** key file `https://pmuacademia.com/834a5fcaf1e720f49126a45d91bc01d2.txt`. After publishing changes, POST the changed URLs to `https://api.indexnow.org/indexnow` with that key (the request is in `work-logs/2026-10-29-seo-prerender-live.md`).
+- **llms.txt** at `https://pmuacademia.com/llms.txt` (summary, key facts, main pages). Keep its price in sync with the homepage.
+- **Checking a deploy:** `tools/browser_check.mjs` serves a built `dist/` the way Lovable hosting does and opens every route in headless Chromium, reporting word counts, hydration errors and calendar loads. Chromium comes from the npm package `@sparticuz/chromium` (the normal Playwright download is blocked in cloud sessions).
+
 ## The plan, in order
 
-1. **Week 1:** pre-render every page, verify Google Search Console + Bing Webmaster Tools, sitemap + IndexNow, Service/FAQPage/Person schema, fix `?lang=en` hreflang, clean up subdomains.
+1. **Week 1:** ~~pre-render every page, verify Google Search Console + Bing Webmaster Tools, sitemap + IndexNow, Service/FAQPage/Person schema, fix `?lang=en` hreflang~~ (done 2026-10-29). Still open: clean up subdomains (agenda., app.).
 2. **Weeks 2–3:** one name everywhere ("PMU Academia USA" + "Sistema Agenda Llena"), `/nosotros`, data-style `/resultados`, Facebook/YouTube/LinkedIn profiles, footer credit on every client site.
 3. **Month 2+:** `/guias/` hub, 2 Spanish articles a week from the content map in `ACTION-PLAN.md`, each turned into a YouTube video and Shorts.
 4. **Ongoing:** monthly audit, drift checks after deploys, monthly AI spot check.

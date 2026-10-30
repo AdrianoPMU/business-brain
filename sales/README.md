@@ -4,7 +4,7 @@ How a lead becomes a paying client.
 
 ## The offer
 
-**Sistema Agenda Llena**, $297/month:
+**Sistema Agenda Llena**, $500 setup + $297/month (decided 2026-10-29; still to confirm whether the $500 covers month one):
 - Meta ads done for her (design, running, optimizing)
 - Branded booking page and website (she picks a color palette, we build around it)
 - Her own app with her business name and number, where she sees every lead and conversation
@@ -27,4 +27,4 @@ After someone books, they get a natural WhatsApp message (from a number with Adr
 
 ## Open questions
 
-- Add a $1,000 setup fee on top of $297/month?
+- The /start Stripe checkout still charges only $297/month; the $500 setup isn't in Stripe yet.
