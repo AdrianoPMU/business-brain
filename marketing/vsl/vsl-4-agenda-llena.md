@@ -1,6 +1,6 @@
 # VSL 4: Sistema Agenda Llena (homepage)
 
-**Status:** draft, waiting for Adriano's OK on the script (2026-10-30). Nothing generated yet.
+**Status:** script approved by Adriano with hook C (2026-10-30). Production next.
 **Replaces:** "PMU_Academia_VSL_3" (Wistia `upq3zz4oav`, Feb 2026, 7.5 min). It pitched the old "Sistema Diamante" with three plans ($297/$497/$997), LLC formation and a free demo. It was taken off the homepage on 2026-10-30.
 **Where it goes:** the homepage hero (16:9), below the "Agenda tu llamada gratis" button.
 **Presenter:** the AI presenter (female), made with Gemini Omni 1.1 Flash the same way as the green-screen ads (`scripts/greenscreen-ad/`). One line per 10-second clip, so every line stays at 15 words or fewer.
@@ -11,15 +11,15 @@ Numbers are written out in words so the presenter says them right. The "En panta
 
 ## Hook options (line 1)
 
-- **A (pain, recommended):** ¿Te escriben "¿cuánto cuesta?"… y después desaparecen?
-- **B (current reality):** Si tu agenda depende de que te recomienden, este video es para ti.
-- **C (desire):** Tienes el talento y el trabajo bonito. Ahora falta la agenda llena.
+- A (pain): ¿Te escriben "¿cuánto cuesta?"… y después desaparecen?
+- B (current reality): Si tu agenda depende de que te recomienden, este video es para ti.
+- **C (desire), chosen by Adriano:** Tienes el talento y el trabajo bonito. Ahora falta la agenda llena.
 
 ## Script
 
 | # | Beat | Spoken line | En pantalla / B-roll |
 |---|---|---|---|
-| 1 | Call out your audience | ¿Te escriben "¿cuánto cuesta?"… y después desaparecen? | Text bubble "¿Cuánto cuesta?", then "visto" with no reply |
+| 1 | Call out your audience | Tienes el talento y el trabajo bonito. Ahora falta la agenda llena. | Healed brow results, then a half-empty week in the calendar |
 | 2 | Call out your audience | Si eres micropigmentadora en Estados Unidos, dame tres minutos. Esto es para ti. | Presenter |
 | 3 | Real problem | Seguro ya intentaste de todo: publicar diario, bajar precios, pagar anuncios. | Quick cuts: Instagram post, price tag, ads manager |
 | 4 | Real problem | Y aun así hay semanas llenas y semanas vacías. | Calendar: one full week, one empty |
