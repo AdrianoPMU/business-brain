@@ -96,12 +96,6 @@ Depende de lo que cueste la cita. 80 mensajes a $5 son $400 por 2 citas: $200 la
 **¿Necesito una página aparte o puedo usar mi link de Instagram?**
 Una página aparte. El link de la bio no te deja medir nada, y sin medición estás adivinando.
 
-## Si quieres que lo hagamos por ti
-
-Esto es lo que hacemos en PMU Academia: los anuncios, la página con tu oferta, la asistente que contesta cada mensaje en minutos y las citas con depósito. Mes a mes, sin contrato, con 30 días de garantía.
-
-Si ya tienes tu trabajo y tus reseñas y lo único que te falta es que la agenda se llene, agenda una llamada y revisamos tus números juntos: [/book](https://pmuacademia.com/book).
-
 ---
 
 <!-- NO PUBLICAR: notas internas -->

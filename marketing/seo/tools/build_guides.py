@@ -44,6 +44,10 @@ def take_faq(body: str):
     return body[: m.start()] + body[m.end():], faqs
 
 
+def blank_size(n: int) -> str:
+    return "corta" if n <= 4 else "media" if n <= 10 else "larga"
+
+
 def plain(text: str) -> str:
     text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
     return re.sub(r"[*_`]", "", text)
@@ -55,7 +59,10 @@ def build_one(path: Path):
     body = re.sub(r"\n---\s*$", "\n", body.rstrip()) + "\n"
     body = re.sub(r"^# .*\n", "", body, count=1, flags=re.M)
     body, faqs = take_faq(body)
-    html = markdown.markdown(body, extensions=["tables", "sane_lists"], output_format="html")
+    # Fill-in blanks ("____") in templates become drawn lines; raw underscores would turn into bold/italics.
+    body = re.sub(r"_{3,}", lambda m: f'<span class="guia-linea guia-linea-{blank_size(len(m.group(0)))}"></span>', body)
+    # md_in_html lets a draft wrap Markdown in <div class="guia-plantilla" markdown="1">.
+    html = markdown.markdown(body, extensions=["tables", "sane_lists", "md_in_html"], output_format="html")
     # Internal links stay on the site; outside links open in a new tab.
     html = re.sub(r'href="https://pmuacademia\.com(/[^"]*)"', r'href="\1"', html)
     html = re.sub(r'<a href="(https?://[^"]+)"', r'<a href="\1" target="_blank" rel="noopener"', html)
