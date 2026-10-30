@@ -2,34 +2,29 @@
 titulo: "Ideas de marketing y promociones para micropigmentadoras (y lo que te puede costar caro)"
 slug: /guias/ideas-marketing-micropigmentadoras
 meta_title: "Ideas de marketing para micropigmentadoras (y qué evitar)"
-meta_description: "Promociones, reseñas, antes y después, sorteos y mensajes de texto para llenar tu agenda de cejas y labios, con las reglas de Google, Meta y la FTC."
+meta_description: "Promociones, depósitos, antes y después, sorteos y mensajes de texto para llenar tu agenda de cejas y labios, con las reglas de Google, Meta y la FTC."
 h1: "Ideas de marketing y promociones para micropigmentadoras"
 pilar: Conseguir clientas
 autor: Adriano Rodriguez
 publicado: Pendiente
 actualizar_cada: 180 días
 fecha: 2026-10-30
-minutos: 10
+minutos: 9
 palabras_clave: ideas de marketing para micropigmentadoras, promociones para cejas, cómo conseguir clientas de micropigmentación, marketing para salón de belleza
 enlaces_internos: /guias/cuanto-cuesta-clienta-cejas-anuncios, /guias/consentimiento-informado-micropigmentacion, /book
-datos_de: políticas de Google, Meta, Yelp, FTC y FCC consultadas el 29 y 30 oct 2026
+datos_de: políticas de Google, Meta, FTC y FCC consultadas el 29 y 30 oct 2026
 ---
 
 # Ideas de marketing y promociones para micropigmentadoras
 
-**Las promociones que más llenan una agenda de cejas tienen precio, cupo y fecha, y van con alguien que contesta en minutos. Las que te pueden costar caro son las que rompen reglas que casi nadie lee: regalar un descuento por una reseña de Google, el sorteo de "comparte y etiqueta a 3 amigas" en Facebook o mandar promociones por texto a quien nunca te dio permiso.**
+**Las promociones que más llenan una agenda de cejas tienen precio, cupo y fecha, y van con alguien que contesta en minutos. Las que te pueden costar caro son las que rompen reglas que casi nadie lee: el sorteo de "comparte y etiqueta a 3 amigas" en Facebook, el anuncio que le pregunta a la clienta "¿tienes cejas escasas?" o mandar promociones por texto a quien nunca te dio permiso.**
 
-Aquí van diez ideas que funcionan, cada una con la regla que tienes que cuidar.
+Aquí van nueve ideas que funcionan, cada una con la regla que tienes que cuidar.
 
 ## Lo que se puede y lo que no, en una tabla
 
 | Idea | ¿Se puede? | La regla |
 |---|---|---|
-| Pedir una reseña de Google a todas tus clientas, con un link o un código QR | Sí | Google lo recomienda |
-| Dar un descuento, un regalo o un sorteo a cambio de una reseña de Google | No | Google lo prohíbe, aunque no pidas 5 estrellas |
-| Pedir reseñas solo a las clientas que quedaron contentas | No | Google lo prohíbe y la FTC puede considerarlo engañoso |
-| Pedir que la reseña diga tu nombre o "microblading en tu ciudad" | No | Google no permite pedir contenido específico |
-| Pedir reseñas en Yelp | No | Yelp pide no pedírselas a nadie |
 | Antes y después en anuncios de Facebook e Instagram | Sí | El anuncio tiene que ir dirigido a mayores de 18 |
 | "¿Tienes cejas escasas?" en un anuncio | Mejor no | Meta rechaza preguntas negativas sobre la apariencia |
 | Sorteo en Facebook con "comparte y etiqueta a 3 amigas" | No | Facebook prohíbe exigir que compartan o etiqueten |
@@ -68,27 +63,7 @@ El estudio más citado sobre esto es de Harvard Business Review, de 2011, con 1.
 
 Si no puedes contestar tú, que conteste alguien. O algo: una asistente con inteligencia artificial puede responder a cualquier hora, siempre que diga qué es si se lo preguntan.
 
-## 4. Pide reseñas de Google a todas tus clientas, sin regalo
-
-Las reseñas pesan. En la encuesta de BrightLocal de 2026, el 97 % de los consumidores en EE. UU. dijo que lee reseñas de negocios locales. En la de Zenoti de 2024, una empresa que vende software para salones, el 78 % de las clientas de salones y spas dijo que revisa reseñas antes de reservar, y unas 9 de cada 10 no consideran un negocio con menos de 4 estrellas.
-
-Pero aquí es donde más artistas se equivocan, porque las reglas son más estrictas de lo que parece:
-
-- **Nada a cambio.** Google prohíbe ofrecer dinero, descuentos, productos o servicios gratis a cambio de *cualquier* reseña. Da igual que no pidas 5 estrellas. Tampoco un boleto para un sorteo.
-- **A todas, no solo a las contentas.** Pedírsela solo a quien sabes que quedó feliz, o preguntar primero "¿cómo te fue?" y mandar el link solo a las que dicen que bien, está prohibido en Google.
-- **Sin dictarles qué escribir.** No pidas que mencionen tu nombre, "microblading" ni tu ciudad.
-- **Sin familia ni empleadas.** Google las considera conflicto de interés.
-- **Yelp es otra historia.** Yelp pide que no le pidas reseñas a nadie: ni clientas, ni amigas, ni tu lista de correos. Si Yelp cree que una reseña fue pedida, su sistema la esconde. Y si ofreces algo a cambio, puede poner un aviso público en tu página.
-
-Si Google detecta reseñas compradas o filtradas, puede bloquear tu perfil para que no reciba reseñas nuevas, ocultar las que ya tienes y mostrar un aviso a las clientas de que se quitaron reseñas falsas. Para una micropigmentadora que vive del mapa de Google, eso es mucho peor que tener pocas reseñas.
-
-Lo que sí funciona: pídela a todas, con un link directo o un código QR, el mismo día o cuando la clienta vuelve al retoque y ve su ceja ya sanada. Eso sí, no le pidas que la escriba ahí mismo antes de irse: Google no permite presionar a las clientas en el local. Algo así:
-
-> Hola Ana, gracias por venir hoy. Si tienes un minuto, me ayudaría mucho que contaras en Google cómo te fue: [link]. Y si algo no te gustó, dímelo también, que lo quiero saber.
-
-Y contesta las reseñas, las buenas y las malas, sin usar la respuesta para anunciar promociones. Google lo pide así.
-
-## 5. Completa tu Perfil de Negocio de Google
+## 4. Completa tu Perfil de Negocio de Google
 
 Si atiendes en persona, calificas para un perfil de Google aunque trabajes desde tu casa. Lo que cambia es si muestras la dirección:
 
@@ -102,7 +77,7 @@ Lo demás:
 - **Fotos reales, sin filtros fuertes.** Google pide que las fotos representen la realidad. Recomienda 720 × 720 píxeles, y los videos pueden durar hasta 30 segundos.
 - **Publicaciones de oferta.** Puedes publicar tu promoción con fechas y términos.
 
-## 6. Antes y después, pero sin atacar a nadie
+## 5. Antes y después, pero sin atacar a nadie
 
 Las fotos de antes y después venden, y Meta las permite en anuncios de micropigmentación, siempre que el anuncio vaya dirigido a mayores de 18 años. Y si una publicación normal promociona un procedimiento cosmético con precio o con una oferta, Meta solo se la muestra a mayores de 18.
 
@@ -119,7 +94,7 @@ Dos cuidados más:
 - **Usa resultados típicos, no solo el mejor.** Si muestras el resultado de una clienta, la FTC entiende que es lo que una clienta normalmente puede esperar, y poner "los resultados pueden variar" no cambia eso. Muestra lo que logras normalmente, mejor si es ya sanado.
 - **Pide permiso para las fotos.** El permiso para tomarle fotos a una clienta para su expediente no es lo mismo que el permiso para subirlas a Instagram. Pídelo aparte, por escrito, en tu [consentimiento informado](https://pmuacademia.com/guias/consentimiento-informado-micropigmentacion).
 
-## 7. Modelos y colaboraciones: que digan que es publicidad
+## 6. Modelos y colaboraciones: que digan que es publicidad
 
 Hacerle el servicio gratis o con descuento a una modelo o a una creadora de contenido para que publique su resultado está bien. Lo que la FTC pide es que se diga. Y Meta pide además que la publicación se haga con su herramienta de contenido de marca (la etiqueta de «colaboración pagada») y que, por ser un procedimiento cosmético, solo la vean mayores de 18 años.
 
@@ -130,17 +105,16 @@ Hacerle el servicio gratis o con descuento a una modelo o a una creadora de cont
 
 Y aunque la publicación la haga ella, tú eres responsable de decirle cómo hacerlo y de revisar que lo haga.
 
-## 8. Sorteos, pero sin "etiqueta a 3 amigas"
+## 7. Sorteos, pero sin "etiqueta a 3 amigas"
 
 Un sorteo puede darte seguidoras y contactos, pero tiene reglas:
 
 - **En Facebook está prohibido exigir** que compartan, etiqueten o publiquen el sorteo para participar.
 - **En Facebook y en Instagram necesitas bases** (quién puede participar, cómo se elige a la ganadora, fechas), aclarar que el sorteo no es de Meta ni de Instagram y que cada participante libere de responsabilidad a Meta.
-- **Nunca un sorteo a cambio de reseñas.** Google lo prohíbe, y para la FTC la posibilidad de ganar un premio cuenta como un incentivo que hay que revelar.
 
 Si el premio es grande, revisa también las reglas de sorteos de tu estado.
 
-## 9. Mensajes de texto: con permiso, con STOP y en horario
+## 8. Mensajes de texto: con permiso, con STOP y en horario
 
 El texto es el canal que más se lee. También es el que tiene reglas más serias:
 
@@ -151,19 +125,11 @@ El texto es el canal que más se lee. También es el que tiene reglas más seria
 
 Guarda cuándo y cómo te dio permiso cada clienta. Si algún día hay una queja, eso es lo que te protege.
 
-## 10. Premia a la clienta que te trae a otra
+## 9. Premia a la clienta que te trae a otra
 
 La clienta contenta es tu mejor anuncio, y no te cuesta nada por adelantado. Un descuento en su retoque o en su próximo servicio cuando una amiga suya reserva y paga su depósito es un descuento que solo pagas cuando ya ganaste una clienta nueva.
 
-Lo importante es que el premio sea por la referida que reserva, no por una reseña. Son cosas distintas, y mezclarlas te mete en el problema del punto 4.
-
 ## Preguntas frecuentes
-
-**¿Puedo dar un descuento a cambio de una reseña de Google?**
-No. Google prohíbe ofrecer descuentos, regalos, dinero o boletos de sorteo a cambio de cualquier reseña, aunque no pidas que sea de 5 estrellas. Puede bloquear tu perfil para recibir reseñas nuevas y mostrar un aviso público.
-
-**¿Puedo pedir reseñas en Yelp?**
-Yelp pide que no le pidas reseñas a nadie, ni a clientas, ni a amigas, ni a tu lista de correos. No es ilegal, pero va contra su política: Yelp esconde las reseñas que cree que fueron pedidas, y si ofreces algo a cambio puede poner un aviso público en tu página.
 
 **¿Puedo usar fotos de antes y después en anuncios de Facebook e Instagram?**
 Sí. Meta permite antes y después en anuncios de procedimientos cosméticos como la micropigmentación, siempre que el anuncio vaya dirigido a mayores de 18 años y no use frases negativas sobre la apariencia de quien lo ve.
@@ -179,13 +145,10 @@ Sí, si atiendes a tus clientas en persona. Puedes mostrar la dirección solo si
 
 ## Fuentes
 
-- Google, [política de contenido falso y reseñas](https://support.google.com/contributionpolicy/answer/7400114?hl=en), [consejos para conseguir reseñas](https://support.google.com/business/answer/3474122?hl=en) y [restricciones por infringir políticas](https://support.google.com/business/answer/14114287?hl=en)
 - Google, [pautas del Perfil de Negocio](https://support.google.com/business/answer/3038177?hl=en), [negocios con área de servicio](https://support.google.com/business/answer/9157481?hl=en), [servicios](https://support.google.com/business/answer/9455399?hl=en), [fotos y videos](https://support.google.com/business/answer/6103862?hl=en) y [publicaciones](https://support.google.com/business/answer/7342169?hl=en)
-- FTC, [regla de reseñas y testimonios, 16 CFR 465](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465), [preguntas y respuestas sobre la regla](https://www.ftc.gov/business-guidance/resources/consumer-reviews-testimonials-rule-questions-answers), [guías de respaldos](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking) y [guía para influenciadores en español](https://www.ftc.gov/system/files/ftc_gov/pdf/Influencer-Guide-2023-ES-508.pdf)
-- Yelp, [no pidas reseñas](https://www.yelp-support.com/article/Don-t-Ask-for-Reviews?l=en_US), [pautas de contenido](https://www.yelp.com/guidelines) y [avisos al consumidor](https://trust.yelp.com/consumer-alerts/)
-- Meta, [anuncios de salud y bienestar](https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/), [atributos personales](https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/) y [promociones en páginas de Facebook](https://www.facebook.com/policies_center/pages_groups_events) y [contenido de marca](https://www.facebook.com/business/help/221149188908254); Instagram, [pautas de promociones](https://help.instagram.com/179379842258600)
+- FTC, [guías de respaldos, 16 CFR 255](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255), [preguntas frecuentes sobre las guías](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking) y [guía para influenciadores en español](https://www.ftc.gov/system/files/ftc_gov/pdf/Influencer-Guide-2023-ES-508.pdf)
+- Meta, [anuncios de salud y bienestar](https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/), [atributos personales](https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/), [promociones en páginas de Facebook](https://www.facebook.com/policies_center/pages_groups_events) y [contenido de marca](https://www.facebook.com/business/help/221149188908254); Instagram, [pautas de promociones](https://help.instagram.com/179379842258600)
 - FCC, [47 CFR 64.1200](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200); Florida, [s. 501.616, F.S.](https://www.flsenate.gov/Laws/Statutes/2025/501.616); CTIA, [principios de mensajería](https://api.ctia.org/wp-content/uploads/2023/05/230523-CTIA-Messaging-Principles-and-Best-Practices-FINAL.pdf); The Campaign Registry, [qué es 10DLC](https://www.campaignregistry.com/wp-content/uploads/TCR-Intro_V4-2.pdf)
-- BrightLocal, [Local Consumer Review Survey 2026](https://www.brightlocal.com/research/local-consumer-review-survey/); Zenoti, [encuesta de clientas de salones y spas 2024](https://www.zenoti.com/wp-content/uploads/2025/08/2024-Salon-and-Spa-Survey.pdf)
 - Harvard Business Review, [The Short Life of Online Sales Leads](https://hbr.org/2011/03/the-short-life-of-online-sales-leads) (2011); Cochrane, [recordatorios por texto para citas médicas](https://www.cochrane.org/evidence/CD007458_mobile-phone-messaging-reminders-attendance-healthcare-appointments) (2013)
 
 ---
@@ -193,13 +156,12 @@ Sí, si atiendes a tus clientas en persona. Puedes mostrar la dirección solo si
 <!-- NO PUBLICAR: notas internas -->
 
 **Antes de publicar, verificar:**
-- [ ] **Agenda Llena:** la función de reseñas con premio (Ajustes > Reseñas: $5 en tarjeta de regalo por cada reseña que reporta la clienta, en Google, Yelp y Facebook) choca con el punto 4 de esta guía. Google prohíbe cualquier incentivo por reseña, y Yelp no permite ni pedirlas. Hablarlo con Adriano antes de publicar: no podemos recomendar una cosa y venderle a la artista la contraria.
+- [x] Sección de reseñas (Google y Yelp) quitada el 30 oct 2026 por decisión de Adriano: chocaba con la función de reseñas con premio de Agenda Llena. Si se vuelve a escribir, hay que resolver eso primero.
 - [ ] La guía de consentimiento (`/guias/consentimiento-informado-micropigmentacion`) tiene que publicarse a la vez, porque esta la enlaza.
 - [ ] El punto 3 dice que una asistente con IA "diga qué es si se lo preguntan": así funciona Sofía (regla 2 de AGENTS.md). Revisar que siga siendo cierto.
 - [ ] Meta cambió su política de salud y bienestar el 23 jul 2026 y no confirmamos qué cambió. Revisar la página antes de publicar.
-- [ ] Datos de BrightLocal: solo el 97 % está verificado textualmente. No añadir sus otras cifras sin revisarlas.
 - [ ] Florida 501.616 (horario 8 a. m. a 8 p. m.): no confirmamos si aplica a los textos de un estudio pequeño (la ley tiene excepciones). Por eso la guía dice "revisa la de tu estado".
-- [ ] Verificación independiente hecha el 30 oct 2026 (agente aparte): se corrigieron contenido de marca de Meta, avisos de Yelp, publicaciones normales, presión en el local, STOP, horario de Florida, resultados típicos, dónde va la divulgación y bases de sorteos.
+- [ ] Verificación independiente hecha el 30 oct 2026 (agente aparte): se corrigieron contenido de marca de Meta, publicaciones normales, STOP, horario de Florida, resultados típicos, dónde va la divulgación y bases de sorteos.
 - [ ] Sorteos: no investigamos las leyes estatales. Por eso la guía solo dice "revisa las reglas de tu estado".
 
 **Notas de publicación:**

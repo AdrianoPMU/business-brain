@@ -28,7 +28,7 @@ Health score **55/100**. Full report: `audits/2026-10-28/` (start with `FULL-AUD
 
 1. **Week 1:** ~~pre-render every page, verify Google Search Console + Bing Webmaster Tools, sitemap + IndexNow, Service/FAQPage/Person schema, fix `?lang=en` hreflang~~ (done 2026-10-29). Still open: clean up subdomains (agenda., app.).
 2. **Weeks 2–3:** one name everywhere ("PMU Academia USA" + "Sistema Agenda Llena"), `/nosotros`, data-style `/resultados`, Facebook/YouTube/LinkedIn profiles, footer credit on every client site.
-3. **Month 2+:** ~~`/guias/` hub~~ (built 2026-10-30, in the Lovable preview, not published yet; see "Guides" below), 2 Spanish articles a week from the content map in `ACTION-PLAN.md`, each turned into a YouTube video and Shorts.
+3. **Month 2+:** ~~`/guias/` hub~~ (live 2026-10-30 with 5 guides; see "Guides" below), 2 Spanish articles a week from the content map in `ACTION-PLAN.md`, each turned into a YouTube video and Shorts.
 4. **Ongoing:** monthly audit, drift checks after deploys, monthly AI spot check.
 
 Keyword Planner data and the article priorities it suggests: `keywords/README.md` (pulled 2026-10-29 through DataForSEO).
@@ -37,14 +37,14 @@ Article drafts live in `content/`, named by their order in the content map. Draf
 
 ## Guides (`/guias`)
 
-**Status (2026-10-30):** hub plus 5 guides built and loaded into the Lovable preview (commit `e48682f`). **Not published**: waiting for Adriano's review and the open items below.
+**Status:** live since 2026-10-30 (Lovable commit `b0d0a19`, published). Sent to IndexNow and the sitemap resubmitted in Search Console the same day.
 
 | # | Guide | URL |
 |---|---|---|
 | 1 | Cuánto cuesta una clienta de cejas con anuncios | `/guias/cuanto-cuesta-clienta-cejas-anuncios` |
 | 2 | Licencia de micropigmentación por estado (17 states) | `/guias/licencia-micropigmentacion-por-estado` |
 | 3 | Consentimiento informado + plantilla | `/guias/consentimiento-informado-micropigmentacion` |
-| 4 | Cómo elegir un curso (links Lexxi's masterclass) | `/guias/como-elegir-curso-micropigmentacion` |
+| 4 | Cómo elegir un curso | `/guias/como-elegir-curso-micropigmentacion` |
 | 5 | Ideas de marketing y promociones | `/guias/ideas-marketing-micropigmentadoras` |
 
 Guides 2–5 were each checked against official sources by a separate agent on 2026-10-30, and the corrections are in.
@@ -55,14 +55,15 @@ Guides 2–5 were each checked against official sources by a separate agent on 2
 3. The site (`src/pages/guias/`) loads the bodies with `import.meta.glob("?raw")` and pre-renders `/guias` and every guide, with Article + BreadcrumbList + FAQPage JSON-LD. A new guide also needs its URL in `public/sitemap.xml` and `public/llms.txt`; `src/test/seo.test.ts` checks the rest.
 4. Getting files into Lovable byte-for-byte: `get_file_upload_url` for each file, `PUT` the file with curl (send the returned headers), then `send_message` with the file ids attached (**max 10 files per message**) asking the agent to `cp` from the uploads and `cmp` them. This beats pasting file contents into the message.
 
-**Open before publishing**
-- Agenda Llena's review rewards ($5 gift card per review, Google/Yelp/Facebook) contradict guide 5: Google bans any incentive for a review and Yelp bans asking. Decide with Adriano.
-- Guide 4 says "Lexxi es mi esposa, y PMU Academia le hace sus anuncios" (FTC disclosure). If that shouldn't be public, the whole Lexxi section goes, not just the sentence. Lexxi's OK too.
-- Have a lawyer review the consent template (guide 3) before promoting it as a download.
-- Meta changed its health and wellness ad policy on 2026-07-23; the change isn't confirmed yet (guide 5).
-- After publishing: IndexNow ping for the 6 new URLs, resubmit the sitemap in Search Console.
+**Decisions (Adriano, 2026-10-30)**
+- No Lexxi or masterclass recommendation in the guides. If one is ever added, it has to say she's his wife and that PMU Academia runs her ads (FTC).
+- Guide 5 has no section on reviews: Agenda Llena's $5 review rewards would contradict it. Write about reviews only after that feature is settled.
+- The consent template is approved as is.
 
-No Google Business Profile: PMU Academia only meets clients online, which Google doesn't allow a profile for.
+**Open**
+- Meta changed its health and wellness ad policy on 2026-07-23; the change isn't confirmed yet (guide 5).
+- Check indexing in Search Console around 2026-11-06.
+- Possible next step: a printable PDF of the consent template as a lead magnet.
 
 ## Google Search Console (connected 2026-10-29)
 

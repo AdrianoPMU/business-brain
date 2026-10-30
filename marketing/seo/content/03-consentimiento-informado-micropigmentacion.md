@@ -250,7 +250,7 @@ Sí, y conviene pedirlo aparte y por escrito. Que te deje tomarle fotos para su 
 <!-- NO PUBLICAR: notas internas -->
 
 **Antes de publicar, verificar:**
-- [ ] **Que la revise una abogada**, sobre todo la plantilla, antes de ofrecerla como descarga. La guía ya dice que no es asesoría legal.
+- [x] Adriano aprobó la guía y la plantilla el 30 oct 2026 ("good to go"). La guía sigue diciendo que no es asesoría legal.
 - [ ] Ohio (Cincinnati): no confirmamos si el departamento de salud de Cincinnati pide más que el estado.
 - [ ] Texas: la regla 229.406 se leyó en una copia de Cornell (enmienda de 2005). Confirmar que es la vigente.
 - [ ] Virginia: no confirmamos qué dice el formulario de riesgos del estado.

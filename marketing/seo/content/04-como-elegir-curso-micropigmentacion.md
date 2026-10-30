@@ -11,7 +11,7 @@ actualizar_cada: 180 días
 fecha: 2026-10-30
 minutos: 9
 palabras_clave: curso de micropigmentación, curso de microblading, curso de cejas en polvo, clases de microblading en español
-enlaces_internos: /masterclass, /guias/licencia-micropigmentacion-por-estado, /guias/consentimiento-informado-micropigmentacion
+enlaces_internos: /guias/licencia-micropigmentacion-por-estado, /guias/consentimiento-informado-micropigmentacion
 datos_de: páginas oficiales consultadas el 29 oct 2026; precios de academias consultados el 30 oct 2026
 ---
 
@@ -144,12 +144,6 @@ Casi todas las academias ofrecen alguna forma de pagar en partes:
 - **Plan propio de la academia.** Lo común es un depósito y el resto unas semanas antes del curso.
 - **Fondos del gobierno (WIOA).** Algunos estados pagan programas de formación que están en su lista oficial. Suelen ser programas largos de escuelas aprobadas, no cursos de fin de semana. Si te interesa, pregunta en la oficina de empleo de tu estado (American Job Center).
 
-## Si buscas una clase privada en español
-
-Una opción que conocemos de cerca: Lexxi, de Brows By Lexxi, da una [masterclass privada 1 a 1 de Ombré Powder Brows](https://pmuacademia.com/masterclass) en Downtown Cincinnati, Ohio, toda en español. Son 2 días de entrenamiento con ella, 1 día extra para trabajar a una modelo real y un kit profesional.
-
-Para que lo sepas: Lexxi es mi esposa, y PMU Academia le hace sus anuncios. Así que tómalo como lo que es, una recomendación de alguien que no es neutral, y hazle las mismas preguntas que a cualquier otra academia: cuántas horas son, qué incluye y qué te pide tu estado para trabajar.
-
 ## Preguntas frecuentes
 
 **¿Cuánto cuesta un curso de microblading en Estados Unidos?**
@@ -186,10 +180,7 @@ No hay un número único para todo el país. La SPCP y la AAM piden unas 100 hor
 
 **Antes de publicar, verificar:**
 - [ ] La guía de licencias (`/guias/licencia-micropigmentacion-por-estado`) tiene que publicarse a la vez, porque esta la enlaza. Revisar que la tabla de estados de aquí coincida con la de esa guía.
-- [ ] Lexxi es la esposa de Adriano. Si la recomendación se queda, la frase "Lexxi es mi esposa, y PMU Academia le hace sus anuncios" se tiene que quedar: la FTC pide revelar las relaciones familiares y comerciales en cualquier recomendación. Si Adriano no quiere decirlo en público, hay que quitar toda la sección, no solo la frase.
-- [ ] Confirmar con Lexxi que está de acuerdo con aparecer aquí.
-- [ ] La masterclass se va a mudar a Cloudflare Pages. Cuando se mude, cambiar el enlace /masterclass por la URL nueva.
-- [ ] Lexxi: su página no dice el precio ni las horas. Si ella quiere, añadir el precio y las horas; si no, dejarlo así.
+- [x] Sección de Lexxi (masterclass) quitada el 30 oct 2026 por decisión de Adriano. No volver a añadir una recomendación suya sin revelar la relación (FTC).
 - [ ] Precios: salen de 15 páginas de academias consultadas el 30 oct 2026 (detalle en la investigación) más 5 que añadió la verificación (Encanta Cejas, Plush Beauty Academy, un curso de lip blush en Las Vegas, Permanent Makeup Plus y The Center). Volver a revisar cada 6 meses.
 - [ ] Verificación independiente hecha el 30 oct 2026 (agente aparte): se ampliaron los rangos de precios y se corrigieron BBP ("se renueva" y "la mayoría de los estados"), Virginia (3 años de experiencia) y la cita de California (119306).
 - [ ] AAM Gold: una página dice seguro de $1M y otra de $3M. Por eso la tabla dice solo "seguro".
