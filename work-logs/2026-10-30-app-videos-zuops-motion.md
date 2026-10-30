@@ -13,8 +13,9 @@
 - Videos start on for PMU Academia's own workspace only; turning them on for a client is an agency decision (each clip is real Gemini money). Max 10 videos per studio per day.
 - Talking videos need a presenter photo (no auto-generated presenter yet).
 
+- 15:45 ET: Adriano added `GEMINI_API_KEY` (secret) to Cloudflare Pages, app redeployed, migration 0063 applied with his OK. Videos are on for the agency workspace; the `videos-run` cron answers 200 every minute.
+
 **Open / next**
-- Adriano to approve applying migration 0063 to the live database.
-- Add `GEMINI_API_KEY` in Cloudflare Pages (agenda-llena → Settings → Environment variables). Best in a separate Google Cloud project from the VSL 4 key: Tier 1 is 20 Omni requests a day per project, and a 60 s video is 7+ requests, so sharing would eat into the VSL clips.
+- Keep the video key in its own Google Cloud project, not the VSL 4 one: Tier 1 is 20 Omni requests a day per project, and a 60 s video is 7+ requests.
 - First real test video once both are in; check the `background: true` polling path and Whisper reading the clip audio against the live APIs (both untested live).
 - Not built yet: ElevenLabs voice pass for one consistent voice, auto-made presenter photo, captions, making videos from the in-app assistant.
