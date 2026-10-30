@@ -16,6 +16,7 @@ The tools and accounts that keep everything running. No passwords or keys in her
 | **PostHog** | Funnel analytics and booking-page split tests |
 | **Lovable** | Older sites (pmuacademia.com, early client pages); being phased out |
 | **GoHighLevel** | Only the pmuacademia.com domain and its DNS (bought through GHL). DNS changes for pmuacademia.com go here, not Cloudflare; the pmuacademia.com zone in our Cloudflare account is pending and not live |
+| **Gemini API** (Omni 1.1 Flash) | AI presenter videos for ads, the same model behind Zuops Motion. Used when Zuops is out of credits. Adriano gives his key for the session; it never goes in a repo. How: `scripts/greenscreen-ad/README.md` |
 | **Google Search Console** | pmuacademia.com search data. Adriano is Owner; Claude reads it through Composio. See `marketing/seo/README.md` |
 
 ## Status of the Zuops move
