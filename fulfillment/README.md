@@ -17,6 +17,7 @@ Delivering results for clients: onboarding, the standard campaign, and one file 
 - **Audience:** Spanish speakers within about 20 miles of her studio
 - **Ads:** Meta, around $15–20/day, often with the AI-avatar video
 - **Form:** Meta Instant Form; the ending button goes to her booking page in the app
+- **AI calls (built Oct 30, off until Adriano turns them on per client):** the assistant calls new leads from the studio's number, answers questions and books the appointment (deposit link by text). Automation "Llamada con IA a leads nuevos" is installed for every studio, turned off. Needs AI-call/text consent wording on the Meta form before it goes live.
 - **Follow-up:** AI texts every lead first; leads who don't book get more texts, and she's encouraged to add them on WhatsApp and call them. Consults happen by phone.
 - **Voucher funnel (rolled out Oct 30 to Jami, Yoly, Cocora, Alix):** ads go to her /voucher page in the app. 15 vouchers per round, and one only counts as used once she books her procedure (claiming alone doesn't). Every voucher is good for 7 days, also ones given from the waitlist; selling out never shortens anyone's time. No picture text. Clients without Stripe/Square get call-only (no deposit option).
 - **Follow-up texts:** the 6-text voucher sequence from Lexxi's funnel, with each studio's names filled in automatically

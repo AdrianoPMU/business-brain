@@ -8,6 +8,7 @@ The tools and accounts that keep everything running. No passwords or keys in her
 |---|---|
 | **Agenda Llena app** (repo `agenda-llena`) | CRM, leads, inbox, texting, booking, AI assistant, agency dashboard. Replaces Zuops and GoHighLevel. Login at app.pmuacademia.com |
 | **Twilio** | Texting and calling. One approved A2P 10DLC campaign; client numbers are bought in the app and go on PMU Academia's campaign |
+| **ElevenLabs** | AI phone calls (Ajustes > Llamadas con IA in the app). One shared voice agent, "Agenda Llena – Llamadas con IA (todas las clientas)" (agent_8301m66zfbq0e11sfmyx72e4hfha); each call sends that studio's prompt, greeting and voice. Calls go out from the studio's own Twilio number. The API key is saved in the app (agency only), never in a repo |
 | **Resend** | Email from the app |
 | **Meta Business Manager** | All client Pages and ad accounts connect through Adriano's BM |
 | **Cloudflare** | Client domains and landing pages (Cloudflare Pages) |
