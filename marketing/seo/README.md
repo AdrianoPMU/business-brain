@@ -31,6 +31,8 @@ Health score **55/100**. Full report: `audits/2026-10-28/` (start with `FULL-AUD
 3. **Month 2+:** `/guias/` hub, 2 Spanish articles a week from the content map in `ACTION-PLAN.md`, each turned into a YouTube video and Shorts.
 4. **Ongoing:** monthly audit, drift checks after deploys, monthly AI spot check.
 
+Keyword Planner data and the article priorities it suggests: `keywords/README.md` (pulled 2026-10-29 through DataForSEO).
+
 Article drafts live in `content/`, named by their order in the content map. Drafts are written before they are published, with the numbers behind them cited and a "NO PUBLICAR" block at the bottom holding what still needs checking.
 
 No Google Business Profile: PMU Academia only meets clients online, which Google doesn't allow a profile for.
