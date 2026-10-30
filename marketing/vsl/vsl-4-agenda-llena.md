@@ -1,6 +1,6 @@
 # VSL 4: Sistema Agenda Llena (homepage)
 
-**Status:** script approved by Adriano with hook C (2026-10-30). Production next.
+**Status:** in production. Script approved with hook C and presenter B (rose top, low bun, pigment shelf) on 2026-10-30. Lines 1–21 are made and a first-half draft went to Adriano for review on 2026-10-30. Lines 22–42 get made after Gemini's daily limit resets (Oct 31 and Nov 1). How it's built: `vsl-4-production/README.md`.
 **Replaces:** "PMU_Academia_VSL_3" (Wistia `upq3zz4oav`, Feb 2026, 7.5 min). It pitched the old "Sistema Diamante" with three plans ($297/$497/$997), LLC formation and a free demo. It was taken off the homepage on 2026-10-30.
 **Where it goes:** the homepage hero (16:9), below the "Agenda tu llamada gratis" button.
 **Presenter:** the AI presenter (female), made with Gemini Omni 1.1 Flash the same way as the green-screen ads (`scripts/greenscreen-ad/`). One line per 10-second clip, so every line stays at 15 words or fewer.
@@ -66,8 +66,8 @@ Numbers are written out in words so the presenter says them right. The "En panta
 
 - **Format:** 16:9 for the hero. The presenter stands on the right third over a soft studio background. App screens, numbers and B-roll fill the left two-thirds (the same green-screen method as the ads). Spanish captions burned in.
 - **Clips:** about 42 Omni clips at roughly $1 each, plus retakes, so about $45–55. That needs Adriano's Gemini key for the session (Zuops credits reset Nov 3).
-- **Screens:** record from the Agenda Llena app with a demo studio, not a real client's leads.
-- **Check:** transcribe the finished video and check it word for word against this table. Then host it (Wistia, like VSL 3) and put it in the hero.
+- **Screens:** animated graphics built to look like the Agenda Llena app, with made-up demo data (Adriano chose this over screen recordings). No real client leads.
+- **Check:** transcribe the finished video and check it word for word against this table. Then put it in the homepage hero (self-hosted mp4 in the site's `public/vsl/`), only after Adriano has watched the full cut.
 - **Rules followed:**
   - No fake urgency (line 35 is the real cost of waiting).
   - The presenter says she's AI (line 21).

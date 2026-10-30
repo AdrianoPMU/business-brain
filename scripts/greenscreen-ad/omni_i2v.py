@@ -9,7 +9,8 @@ import base64, json, os, sys, time, urllib.error, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-KEY = Path(os.environ['GEMINI_KEY_FILE']).read_text().strip()
+# Use only the last non-empty line, so a note above the key in the file never gets sent or printed.
+KEY = [l.strip() for l in Path(os.environ['GEMINI_KEY_FILE']).read_text().splitlines() if l.strip()][-1]
 API = 'https://generativelanguage.googleapis.com/v1beta'
 ref, lang, out = sys.argv[1], sys.argv[2], Path(sys.argv[3])
 out.mkdir(parents=True, exist_ok=True)

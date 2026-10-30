@@ -18,4 +18,7 @@ Zuops Motion runs on Google's **Gemini Omni 1.1 Flash**. When Zuops is out of cr
 - Don't chain clips with `previous_interaction_id` (extensions). She repeats words at every seam ("listen up, listen up"), and it stops at 30 seconds.
 - Google's filter blocked the English line "You don't pay anything today…" twice. "And the best part? Just tap the button and grab your voucher…" went through.
 - Running 3 clips at once can hit a spending-rate limit (HTTP 429). Wait a minute and retry one at a time.
+- Tier 1 limits for Omni (seen Oct 30, 2026): 4 requests a minute, a spend-based rate limit, and **20 requests a day**. The day resets at midnight Pacific. A 42-line VSL takes 3 days, so plan long videos around it. `marketing/vsl/vsl-4-production/run_slow.py` runs clips one at a time and stops at the daily cap.
+- The key file must hold only the key. The scripts read the last non-empty line, so a note above it is ignored, but an error can still print the whole file.
+- A stuttered word can sometimes be cut out instead of paying for a retake: `vsl-4-production/repair.py` cuts between the two starts of the repeated word with a short crossfade. Re-transcribe after.
 - Clips sometimes stutter ("Beauty Beauty Lounge"). Always transcribe every clip before stitching.
