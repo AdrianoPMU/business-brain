@@ -9,4 +9,6 @@
 - Ads: green-screen voucher ads in Spanish and English (Oct 29 2026). No Meta ad account of her own yet.
 - Website hero photo: from her Reel DXS5VsJga1r (hero.jpg); alternate hero-alt.jpg ready
 - Review page for her feedback: app.pmuacademia.com/revision/aglahel-ramos/
-- Still missing: exact address, confirmed hours, original photos without text
+- Hours (confirmed Oct 30 2026): Tue 10–5, Wed 10–7, Thu 10–7, Fri 10–2; closed Sat, Sun, Mon
+- Ads use Lexxi's Ombré Powder photos for now (Oct 30 2026); swap in her own when she has strong healed results
+- Still missing: exact address, original photos without text
