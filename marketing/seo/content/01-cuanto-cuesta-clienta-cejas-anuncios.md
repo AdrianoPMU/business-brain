@@ -8,6 +8,8 @@ pilar: Conseguir clientas
 autor: Adriano Rodriguez
 publicado: Pendiente
 actualizar_cada: 90 días
+fecha: 2026-10-29
+minutos: 6
 enlaces_internos: /book, /resultados, /guias/como-conseguir-clientas-micropigmentacion
 datos_de: 29 sep – 28 oct 2026
 ---
