@@ -8,3 +8,4 @@
 
 ## Notes
 - Started onboarding Sep 2026
+- Oct 30 2026: voucher page live at yolybrowstudio.com/voucher (call only, no payments connected). Voucher campaign built PAUSED in her ad account ($20/day, image + client reaction video).

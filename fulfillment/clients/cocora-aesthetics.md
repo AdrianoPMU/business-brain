@@ -9,3 +9,4 @@
 ## Notes
 - First client site built on GitHub + Cloudflare instead of Lovable (Oct 2026)
 - Her thank-you page layout is working well and is being rolled out to other clients
+- Oct 30 2026: voucher page at app.pmuacademia.com/f/cocora-aesthetics/ombre/voucher (call or $50 deposit via Square). Its pixel switched to 2302573763899313, the one in her ad account. Voucher campaign built PAUSED ($25/day, image + Tatiana's explanation video).
