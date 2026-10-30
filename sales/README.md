@@ -4,11 +4,13 @@ How a lead becomes a paying client.
 
 ## The offer
 
-**Sistema Agenda Llena**, $500 setup + $297/month (decided 2026-10-29; still to confirm whether the $500 covers month one):
+**Sistema Agenda Llena**: $500 the first month, setup included, then $297/month (Adriano confirmed on 2026-10-30 that the $500 covers month one):
 - Meta ads done for her (design, running, optimizing)
 - Branded booking page and website (she picks a color palette, we build around it)
 - Her own app with her business name and number, where she sees every lead and conversation
-- AI follow-up texting that books consults
+- Sofía, the AI assistant: texts every lead in seconds, 24/7, in Spanish or English; sees the photos they send and books the consult; says she's AI if asked
+- Booking page with deposit and coupon; automatic review requests by text (Google and Facebook)
+- Ad videos with an AI presenter
 - Google Business Profile optimization
 - Sales & Bookings handbook once she signs
 - 30-day money-back guarantee

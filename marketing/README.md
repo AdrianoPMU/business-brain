@@ -1,6 +1,6 @@
 # Marketing
 
-How PMU Academia finds its own clients (PMU artists who'll pay $297/month).
+How PMU Academia finds its own clients (PMU artists who'll pay $500 the first month, then $297/month).
 
 ## Current state (late Oct 2026)
 
@@ -21,6 +21,7 @@ Other assets:
 
 - Instant Form leads come in under $5, but they skew broke or brand-new artists.
 - The original VSL page didn't convert well.
+- **Homepage VSL:** VSL 3 (Wistia `upq3zz4oav`, Feb 2026) pitched the old "Sistema Diamante" with three plans, so it was taken off the homepage on 2026-10-30. VSL 4 (AI presenter, about 3 min) is drafted in `vsl/vsl-4-agenda-llena.md` and waiting for Adriano's OK on the script.
 - Meta audiences live in the older "Citas PMU" ad account (the pixel is linked there).
 
 ## SEO and AI search

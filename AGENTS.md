@@ -8,7 +8,7 @@ PMU Academia is a done-for-you growth system for Spanish-speaking permanent make
 
 We sell it as **Sistema Agenda Llena**: we run the artist's Meta ads, build her booking page and site, follow up with every lead by text, and get consults and appointments booked. It all runs inside the Agenda Llena app, which Adriano built to replace GoHighLevel/Zuops.
 
-- Price: $500 setup + $297/month (Adriano chose this for the homepage on 2026-10-29; the /start Stripe checkout still charges only $297/month)
+- Price: $500 the first month (setup included), then $297/month (Adriano, 2026-10-29/30; the /start Stripe checkout still charges only $297/month)
 - 30-day money-back guarantee, any reason
 - No free or $1 trials anymore
 - Typical client ad spend: around $15–20/day, paid by the client to Meta
