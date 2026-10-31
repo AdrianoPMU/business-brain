@@ -3,7 +3,8 @@
   python3 -I make_bg_brows.py OUT.mp4 face_landmarker.task SEG [SEG ...]
 
 SEG forms (times in seconds):
-  full:clip.mp4:dur[:start]    full-screen video (or a photo), reframed every frame so the brows sit at (540, 640)
+  full:clip.mp4:dur[:start][:LABEL]  full-screen video or photo, reframed every frame so the brows sit at (540, 640);
+                               LABEL (e.g. ANTES / DESPUÉS) adds a pill under the headline. BROW_SPAN env sets zoom.
   half:file:top|bottom:dur[:LABEL]
                                one half of a stacked before/after (image or video), full width in the
                                upper part of the screen over a blurred copy, brows near y=640.
@@ -20,6 +21,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 W, H, FPS = 1080, 1920, 30
 TX, TY = 540, 640            # where the brow centre goes
+SPAN = float(__import__('os').environ.get('BROW_SPAN', 620))   # how wide the brows end up on screen (smaller = more face)
 SAFE_BOTTOM = 880            # brows must stay above this (presenter starts at ~922)
 BROWS = [70, 63, 105, 66, 107, 46, 53, 52, 65, 55, 336, 296, 334, 293, 300, 276, 283, 282, 295, 285]
 out_p, model_p = sys.argv[1], sys.argv[2]
@@ -68,12 +70,12 @@ def smooth(vals, a=0.8):
     return res
 
 BOLD = '/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf'
-LF = ImageFont.truetype(BOLD, 44)
+LF = ImageFont.truetype(BOLD, 54)
 def label(img, text, y):
     pil = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB)).convert('RGBA')
     d = ImageDraw.Draw(pil); tw = LF.getlength(text)
-    d.rounded_rectangle((40, y, 40 + tw + 44, y + 70), radius=18, fill=(20, 20, 20, 215))
-    d.text((62, y + 10), text, font=LF, fill=(255, 255, 255))
+    d.rounded_rectangle((40, y, 40 + tw + 52, y + 82), radius=20, fill=(20, 20, 20, 225))
+    d.text((66, y + 11), text, font=LF, fill=(255, 255, 255))
     return cv2.cvtColor(np.array(pil.convert('RGB')), cv2.COLOR_RGB2BGR)
 
 enc = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
@@ -86,7 +88,10 @@ for seg in segs:
     kind = parts[0]
     if kind == 'full':
         path, dur = parts[1], float(parts[2]); n = int(dur * FPS)
-        start = float(parts[3]) if len(parts) > 3 else 0.0
+        extra = parts[3:]                       # optional start time (a number) and/or LABEL, in any order
+        num = lambda x: x.replace('.', '', 1).isdigit()
+        start = next((float(x) for x in extra if num(x)), 0.0)
+        lab = next((x for x in extra if not num(x)), None)
         fr = frames_of(path, start, n)
         det = [brows(lm, f) for f in fr]
         ok = [d for d in det if d]
@@ -99,7 +104,7 @@ for seg in segs:
         c = smooth(c)
         span = np.median([d[1][0] for d in ok])
         h, w = fr[0].shape[:2]
-        s = min(max(W / w, H / h, 620 / max(span, 1)), 3.0)
+        s = min(max(W / w, H / h, SPAN / max(span, 1)), 3.0)
         bad = 0
         for f, (cx, cy) in zip(fr, c):
             X = np.clip(TX - s * cx, W - s * w, 0); Y = np.clip(TY - s * cy, H - s * h, 0)
@@ -107,6 +112,8 @@ for seg in segs:
             o = cv2.warpAffine(f, M, (W, H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT)
             by = s * cy + Y
             bad += by > SAFE_BOTTOM - 60 or not (150 < s * cx + X < 930)
+            if lab:
+                o = label(o, lab, 420)
             enc.stdin.write(o.tobytes())
         report.append(f'{seg}: scale {s:.2f}, frames off-target {bad}/{len(fr)}')
     else:
