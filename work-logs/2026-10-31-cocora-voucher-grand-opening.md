@@ -20,3 +20,8 @@
 - AI disclosure on the new creative was left unset (the presenter is AI-generated); Adriano decides.
 - The old empty "Ombre Powder $330 Apertura - FB Lead Form" campaign (Oct 25) is still in the account, paused with no ads.
 - Zuops has 2 credits left.
+
+**Update (12:30)**
+- Ad video v2: 15% faster (32.8 s), top pill made narrower so both pills keep a margin. File: agenda-llena public/media/anuncios/cocora-voucher-apertura-ES-v2.mp4
+- Meta: new ad "Voucher Apertura $330 - presentadora v2" (52616150097055, creative 2264630170995241), PAUSED. v1 ad renamed "(no usar, ver v2)". At launch turn on only v2.
+- Preview page for Tatiana (claude.ai artifact "Cocora Gran Apertura") updated with v2; phone frames now 9:16 so nothing is cropped.
