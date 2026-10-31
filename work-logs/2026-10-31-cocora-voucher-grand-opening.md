@@ -25,3 +25,4 @@
 - Ad video v2: 15% faster (32.8 s), top pill made narrower so both pills keep a margin. File: agenda-llena public/media/anuncios/cocora-voucher-apertura-ES-v2.mp4
 - Meta: new ad "Voucher Apertura $330 - presentadora v2" (52616150097055, creative 2264630170995241), PAUSED. v1 ad renamed "(no usar, ver v2)". At launch turn on only v2.
 - Preview page for Tatiana (claude.ai artifact "Cocora Gran Apertura") updated with v2; phone frames now 9:16 so nothing is cropped.
+- Preview page now hosted at https://app.pmuacademia.com/vista/cocora-apertura/ (agenda-llena public/vista/, noindex). /vista/ added to the PWA navigateFallbackDenylist so app users see the page, not the app. Pattern for future client previews: public/vista/<client>-<topic>/index.html.
