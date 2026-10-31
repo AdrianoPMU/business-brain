@@ -12,3 +12,10 @@
 - Opens with the high-converting before/after Adriano supplied (the same one opening Yoly's ad). It is NOT Alix's work, so it carries an on-screen label: "Ejemplo del estilo · no es trabajo de Alix". Swap it for one of Alix's own before/afters when she sends one, then drop the label.
 - Same presenter and audio as v3: presenter cut back out of v3 (selfie_multiclass + a per-video outline prior to drop old-background bits) and placed over the new reel. No credits used.
 - File: alix-voucher-ES-v4.mp4 (Desktop/alix client). Not yet in Meta or on her voucher/review pages.
+
+**Update Oct 31 (v5)**
+- Adriano cut the sideways close-up (F16) and asked for befores with the afters. Each client now runs ANTES then DESPUÉS, all from her folder:
+  - Curly hair, white top: ANTES = first frame of VIDEO-16-08-41 → F3, F4 (and V8 at the end).
+  - Blonde, black halter: ANTES = F23 → F1, F2.
+  - Dark hair, black top: ANTES = F12 (was mislabeled DESPUÉS in v4) → F19, F17.
+- Labeled example opener unchanged. File: alix-voucher-ES-v5.mp4 (Desktop/alix client).
