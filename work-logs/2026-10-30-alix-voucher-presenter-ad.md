@@ -6,3 +6,9 @@
 - `make_bg_brows.py`: `full:` accepts an optional start time and/or LABEL; BROW_SPAN env sets the zoom; bigger label pills.
 - Her booking link on Instagram is bombshellbeautystudiollc.booksy.com, and the Meta account "bombshelbeautystudio" (no payment method) may be hers. Not confirmed.
 - Zuops credits left: 17.
+
+**Update Oct 31 (v4)**
+- Background rebuilt from Adriano's picker choices, in order: F3, F4, F1, F2, F12, F16, F17, V8 (F16/F17 rotated upright).
+- Opens with the high-converting before/after Adriano supplied (the same one opening Yoly's ad). It is NOT Alix's work, so it carries an on-screen label: "Ejemplo del estilo · no es trabajo de Alix". Swap it for one of Alix's own before/afters when she sends one, then drop the label.
+- Same presenter and audio as v3: presenter cut back out of v3 (selfie_multiclass + a per-video outline prior to drop old-background bits) and placed over the new reel. No credits used.
+- File: alix-voucher-ES-v4.mp4 (Desktop/alix client). Not yet in Meta or on her voucher/review pages.
