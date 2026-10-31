@@ -19,3 +19,4 @@
   - Blonde, black halter: ANTES = F23 → F1, F2.
   - Dark hair, black top: ANTES = F12 (was mislabeled DESPUÉS in v4) → F19, F17.
 - Labeled example opener unchanged. File: alix-voucher-ES-v5.mp4 (Desktop/alix client).
+- Review page app.pmuacademia.com/revision/beauty-by-alix now shows v5 (live, checked). Its Fotos note tells her the opener is an example, not her work, and asks for one before/after of her own to replace it.
