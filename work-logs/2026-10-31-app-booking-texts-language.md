@@ -1,6 +1,6 @@
 # 2026-10-31: Booking texts in the client's language
 
-**Where:** agenda-llena, branch `booking-texts-in-her-language` (not on main yet)
+**Where:** agenda-llena, main (pushed 2026-10-31, live)
 
 **Done**
 - Found that booking pages sent the page language but the server ignored it: every booking confirmation and reminder went out in Spanish, even for clients who booked on the English page.
@@ -12,5 +12,5 @@
 - Language is stored in the existing form-answers field, not a new column, so no migration was needed and everything already reading it stays in sync.
 
 **Open / next**
-- Adriano to review and merge the branch to main (goes live on merge).
+- Check a real English booking on the live app.
 - Still Spanish only: pre-call video invite texts (`precall.ts`). The AI texter (Sofía) already switches to English when the client writes in English.
