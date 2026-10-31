@@ -3,7 +3,7 @@
   python3 -I make_bg_brows.py OUT.mp4 face_landmarker.task SEG [SEG ...]
 
 SEG forms (times in seconds):
-  full:clip.mp4:dur            full-screen video, reframed every frame so the brows sit at (540, 640)
+  full:clip.mp4:dur[:start]    full-screen video (or a photo), reframed every frame so the brows sit at (540, 640)
   half:file:top|bottom:dur[:LABEL]
                                one half of a stacked before/after (image or video), full width in the
                                upper part of the screen over a blurred copy, brows near y=640.
@@ -30,12 +30,16 @@ def landmarker():
         base_options=BaseOptions(model_asset_path=model_p), running_mode=vision.RunningMode.IMAGE, num_faces=1))
 
 def brows(lm, img):
-    r = lm.detect(mp.Image(image_format=mp.ImageFormat.SRGB, data=cv2.cvtColor(img, cv2.COLOR_BGR2RGB)))
-    if not r.face_landmarks:
-        return None
+    """Brow centre and span; if the face fills the frame (close-up), retry with a grey border around it."""
     h, w = img.shape[:2]
-    p = np.array([[r.face_landmarks[0][i].x * w, r.face_landmarks[0][i].y * h] for i in BROWS])
-    return p.mean(0), np.ptp(p, 0)          # centre, (span x, span y)
+    for py, px in ((0, 0), (h // 2, w // 4)):
+        x = img if not py else cv2.copyMakeBorder(img, py, py, px, px, cv2.BORDER_CONSTANT, value=(128, 128, 128))
+        r = lm.detect(mp.Image(image_format=mp.ImageFormat.SRGB, data=np.ascontiguousarray(cv2.cvtColor(x, cv2.COLOR_BGR2RGB))))
+        if r.face_landmarks:
+            H2, W2 = x.shape[:2]
+            p = np.array([[r.face_landmarks[0][i].x * W2 - px, r.face_landmarks[0][i].y * H2 - py] for i in BROWS])
+            return p.mean(0), np.ptp(p, 0)          # centre, (span x, span y)
+    return None
 
 def frames_of(path, start, n):
     if path.lower().endswith(('.png', '.jpg', '.jpeg', '.webp')):
@@ -82,7 +86,8 @@ for seg in segs:
     kind = parts[0]
     if kind == 'full':
         path, dur = parts[1], float(parts[2]); n = int(dur * FPS)
-        fr = frames_of(path, 0, n)
+        start = float(parts[3]) if len(parts) > 3 else 0.0
+        fr = frames_of(path, start, n)
         det = [brows(lm, f) for f in fr]
         ok = [d for d in det if d]
         if not ok:
