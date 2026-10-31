@@ -1,6 +1,6 @@
 # VSL 4: Sistema Agenda Llena (homepage)
 
-**Status:** in production. Script approved with hook C and presenter B (rose top, low bun, pigment shelf) on 2026-10-30. Lines 1–21 are made and a first-half draft went to Adriano for review on 2026-10-30. Lines 22–42 get made after Gemini's daily limit resets (Oct 31 and Nov 1). How it's built: `vsl-4-production/README.md`.
+**Status:** full cut v1 (3:43) made and sent to Adriano for review on 2026-10-31. Script approved with hook C and presenter B (rose top, low bun, pigment shelf) on 2026-10-30. Not on the homepage until Adriano approves it. How it's built: `vsl-4-production/README.md`.
 **Replaces:** "PMU_Academia_VSL_3" (Wistia `upq3zz4oav`, Feb 2026, 7.5 min). It pitched the old "Sistema Diamante" with three plans ($297/$497/$997), LLC formation and a free demo. It was taken off the homepage on 2026-10-30.
 **Where it goes:** the homepage hero (16:9), below the "Agenda tu llamada gratis" button.
 **Presenter:** the AI presenter (female), made with Gemini Omni 1.1 Flash the same way as the green-screen ads (`scripts/greenscreen-ad/`). One line per 10-second clip, so every line stays at 15 words or fewer.

@@ -25,7 +25,7 @@ No clips, key or output live here. The clips are about 56 MB and this repo is pu
 
 1. `GEMINI_KEY_FILE=... python3 run_slow.py 1 2 ... 42` (20 a day on Tier 1)
 2. `python3 transcribe.py medium clips/clip-*.mp4`, then `python3 check.py`. Move any bad clip to `bad-N.mp4` and rerun step 1 for it, or fix it with `repair.py`.
-3. `python3 assemble.py` (add `N:max_end` for a clip with noise after the line, e.g. `5:4.0`)
+3. `python3 assemble.py` (add `N:max_end` for a clip with noise after the line; v1 used `5:4.0 23:6.8`)
 4. `node render.mjs out/gfx.mp4 24 "1:d1,2:d2,..."` with the durations from `durations.json` (about 6 minutes for the full video)
 5. `python3 captions.py && ./composite.sh`
 6. Transcribe `out/vsl-4.mp4` and read it against the script before anyone sees it.

@@ -43,7 +43,7 @@ Style: Lbl,DM Sans 9pt,22,&H00FFFFFF,&H00FFFFFF,&H55283234,&H00000000,-1,0,0,0,1
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
 ev, t0 = [], 0.0
-for n in range(1, 43):
+for n in sorted(durs):
     d = durs[n]['dur']; trim = durs[n]['start']
     words = json.load(open(f'clips/clip-{n}.mp4.words.json'))
     sp0 = max(0.0, (words[0][1] - trim)) if words else 0.1
