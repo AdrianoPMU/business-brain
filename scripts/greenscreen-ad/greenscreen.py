@@ -74,10 +74,12 @@ while True:
     fs = cv2.resize(f, (pw, ph), interpolation=cv2.INTER_AREA).astype(np.float32)
     as_ = cv2.resize(a, (pw, ph), interpolation=cv2.INTER_AREA)[..., None]
     out = b.astype(np.float32)
-    sh = cv2.GaussianBlur(as_[..., 0], (0, 0), 14)[..., None] * 0.35
+    # shadow drawn on a full-frame canvas so its blur never gets clipped at the presenter box (no faint rectangle)
+    canvas = np.zeros((H, W), np.float32)
     sx, sy = px - 10, py + 6
-    reg = out[sy:sy + ph, sx:sx + pw]
-    out[sy:sy + ph, sx:sx + pw] = reg * (1 - sh[:reg.shape[0], :reg.shape[1]])
+    canvas[sy:sy + ph, sx:sx + pw] = as_[:H - sy, :W - sx, 0]
+    sh = cv2.GaussianBlur(canvas, (0, 0), 14)[..., None] * 0.35
+    out = out * (1 - sh)
     reg = out[py:py + ph, px:px + pw]
     out[py:py + ph, px:px + pw] = reg * (1 - as_) + fs * as_
     out = out * (1 - ca) + cc * ca

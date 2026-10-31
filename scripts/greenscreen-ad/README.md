@@ -12,6 +12,10 @@ Zuops Motion runs on Google's **Gemini Omni 1.1 Flash**. When Zuops is out of cr
 4. `greenscreen.py head.mp4 bg_loop.mp4 cap.png selfie_multiclass.tflite out.mp4` cuts her out and places her over the reel. The model is MediaPipe's `selfie_multiclass_256x256.tflite`.
 5. Transcribe the finished ad (faster-whisper, medium) and check it word for word.
 
+## Brows always visible
+
+`make_bg_brows.py OUT.mp4 face_landmarker.task full:clip.mp4:4.2 half:ba.png:top:2:ANTES ...` builds a background where the brows stay at (540, 640), above the presenter. Use it instead of `make_bg.py` when the brows must never be covered.
+
 ## What we learned
 
 - Each Omni clip is 10 seconds and costs about $1. One line of about 15 words fits in a clip.
